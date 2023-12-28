@@ -1,0 +1,46 @@
+:root {
+  --text: black;
+  --active-text: blue;
+}
+
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--text);
+}
+
+a.active {
+  color: var(--active-text);
+}
+
+video.bg {
+  position: absolute;
+  left: 50%;
+  /* % of surrounding element */
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* % of current element */
+}
+
+#nav {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Home Page */
+.container#landing {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
